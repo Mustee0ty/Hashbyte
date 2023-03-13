@@ -11,7 +11,8 @@ import Wallet from './Pages/Wallet.js';
 
 // import Components
 import Setting from './Component/Setting.js';
-import Switcher from './Component/Switcher.js'
+import Switcher from './Component/Switcher';
+import Slider from './Component/Slider';
 
 
 
@@ -28,8 +29,9 @@ const App = () => {
             {/* <Test /> */}
             {/* <WalletAd /> */}
             {/* <Setting /> */}
-            <Wallet />
+            {/* <Wallet /> */}
             {/* <Switcher /> */}
+            <Slider />
           </Route>
         </Switch>
       </div>
