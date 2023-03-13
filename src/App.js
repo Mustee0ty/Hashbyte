@@ -28,8 +28,8 @@ const App = () => {
             {/* <Test /> */}
             {/* <WalletAd /> */}
             {/* <Setting /> */}
-            {/* <Wallet /> */}
-            <Switcher />
+            <Wallet />
+            {/* <Switcher /> */}
           </Route>
         </Switch>
       </div>
