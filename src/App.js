@@ -26,12 +26,12 @@ const App = () => {
             {/* <OnboardingScreen /> */}
             {/* <Upgrade /> */}
             {/* <Home /> */}
-            {/* <Test /> */}
+            <Test />
             {/* <WalletAd /> */}
             {/* <Setting /> */}
             {/* <Wallet /> */}
             {/* <Switcher /> */}
-            <Slider />
+            {/* <Slider /> */}
           </Route>
         </Switch>
       </div>

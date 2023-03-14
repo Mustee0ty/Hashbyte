@@ -10,26 +10,37 @@ const Slider = () => {
 
   return (
     <section className='container mx-auto h-screen w-screen'>
-      <div className='flex items-center justify-center w-[308px] mt-[10vh] h-[181px] rounded-lg bg-blue-500'>
+      <div className='w-full mt-[10vh] h-[181px] flex flex-row relative'>
         {item.map((thing) =>{
           const { id,heading,subtitle,image } = thing;
           
+          // let position = 'nextSlide';
+          // if(personIndex === index ){
+          //   postion = 'activeSlide'
+          // }
+
           return (
-          <section className='flex flex-row' key={id}>
-            <div className='flex-1'>
+          <article className='flex flex-row w-[312px] rounded-lg bg-blue-500 p-2 m-1 duration-500' key={id}>
+            <div className='flex-1 w-1/2'>
               <p>{heading}</p>
               <p>{subtitle}</p>
             </div>
-            <div className='flex-2'>
-              <img className='h-[150px] w-[300px] ' src={image} alt="" />
+            <div className='flex-2'>  
+              <img className='h-[150px] w-[150px] ' src={image} alt="" />
             </div>
-          </section>
+          </article>
           )
         })}
-        <div className='flex'>
-        {/* <ShorterDot/> */}
-        {/* <LongerDot/> */}
-        {/* <ShorterDot/> */}
+        <div className='flex flex-row relative top-[25vh]'>
+          <button>
+            <img src={ShorterDot} alt="" />
+          </button>
+          <button>
+            <img src={LongerDot} alt="" />
+          </button>
+          <button>
+            <img src={ShorterDot} alt="" />
+          </button>      
         </div>
       </div>
     </section>

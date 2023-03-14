@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 //import components
 import Nav from '../Component/Nav.js'
+import Setting from '../Component/Setting.js';
 
 // import assets
 import Logo from '../assets/logo.png';
@@ -16,13 +17,21 @@ import SignalLogo from '../assets/SignalLogo.png';
 import ExchangeLogo from '../assets/ExchangeLogo.png';
 
 const Home = () => {
+
+  const [ showSettings, setShowsettings ] = useState(false);
+
+  const handleImageClick = () => {
+    setShowsettings(!showSettings);
+  }
+
+
   return (
     <section className='bg-[#5B63E6] '>
       {/* header */}
       <header className='flex min-w-fit flex-row items-center justify-between'>
         {/* Profile picture */}
         <div>
-          <img className='rounded-full' src='' alt="" />
+          <img onClick={handleImageClick} className='rounded-full' src='' alt="" />
         </div>
         {/* Header morning text */}
         <div p-4>

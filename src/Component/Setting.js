@@ -82,7 +82,27 @@ const Setting = () => {
               <p>Dark Mode</p>
             </div>
           </div>
+          {/* pop up functionality */}
+        {/* 
+            import React from 'react';
 
+            const Sidebar = ({ onClose }) => {
+              return (
+                <div className="fixed top-0 left-0 bottom-0 bg-white w-4/5 transition-all duration-500 z-40">
+                  <button className="absolute top-0 right-0 bg-blue-500 text-white px-4 py-2 rounded-l-md focus:outline-none" onClick={onClose}>
+                    Close
+                  </button>
+                  <div className="flex flex-col items-center justify-center h-full">
+                    <p className="text-2xl font-bold mb-4">Sidebar</p>
+                    <p className="text-lg">Here's where you can put more content.</p>
+                  </div>
+                </div>
+              );
+            };
+
+export default Sidebar;
+  
+        */}
       </div>
     </section>
   )
