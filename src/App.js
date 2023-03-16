@@ -13,6 +13,7 @@ import Wallet from './Pages/Wallet.js';
 import Setting from './Component/Setting.js';
 import Switcher from './Component/Switcher';
 import Slider from './Component/Slider';
+import SendRecieveDrawer from './Component/SendRecieveDrawer'
 
 
 
@@ -26,12 +27,13 @@ const App = () => {
             {/* <OnboardingScreen /> */}
             {/* <Upgrade /> */}
             {/* <Home /> */}
-            <Test />
+            {/* <Test /> */}
             {/* <WalletAd /> */}
             {/* <Setting /> */}
             {/* <Wallet /> */}
             {/* <Switcher /> */}
             {/* <Slider /> */}
+            <SendRecieveDrawer />
           </Route>
         </Switch>
       </div>

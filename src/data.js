@@ -4,6 +4,10 @@ import React from "react";
 import ProfilePic from './assets/profilepic.png';
 import WalletHero from './assets/walletHeroImg.png'
 
+//import Svgs
+import WalElipse from './assets/CircularWalletThing.svg'
+
+
 export const computerList = [
   {
     id:1,
@@ -92,4 +96,34 @@ export const WalletSlides = [
     subtitle:'Shop, Pay for Utilities',
     image: WalletHero,
   },
+]
+
+export const SendRecievePopUp = [
+  {
+    id:1,
+    amount: '$345,78.90',
+    text:'Total amount earned',
+  },
+  {
+    id:2,
+    amount: '$345,78.90',
+    text:'Total amount withdrawn',
+  },
+]
+
+export const OtherWallets = [
+    {
+      id:1,
+      amount:'$345,78.90',
+      acctInfo: 'Withdrawable',
+      background: '#356AF3',
+      icon: WalElipse,
+    },
+    {
+      id:1,
+      amount:'$345,78.90',
+      acctInfo: 'Withdrawable',
+      background: '#F18455',
+      icon: WalElipse,
+    },
 ]
