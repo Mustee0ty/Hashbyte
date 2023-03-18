@@ -51,11 +51,11 @@ const ExpandableMenu = () => {
                 {
                   OtherWallets.map((wallet) => {
                     const { id,amount,acctInfo,background,icon } = wallet;
-                    return <div className={`${'bg-background w-[157.15px] h-[168px] rounded-[15px]'}`}>
-                      <div>
+                    return <div key={wallet.id} >
+                      <div className={`bg-&{background} bg-red-500 w-[157.15px] p-6 text-white items-center justify-center h-[168px] rounded-[15px]`}>
                       <img src={icon} alt="" />
                       <p>{amount}</p>
-                      <p>Available Balance</p>
+                      <p className='font-light inline-block'>Available Balance</p>
                       <p>{acctInfo}</p>
                       </div>
                     </div>

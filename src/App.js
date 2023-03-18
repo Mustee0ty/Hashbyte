@@ -26,14 +26,14 @@ const App = () => {
           <Route exact path="/">
             {/* <OnboardingScreen /> */}
             {/* <Upgrade /> */}
-            {/* <Home /> */}
+            <Home />
             {/* <Test /> */}
             {/* <WalletAd /> */}
             {/* <Setting /> */}
             {/* <Wallet /> */}
             {/* <Switcher /> */}
             {/* <Slider /> */}
-            <SendRecieveDrawer />
+            {/* <SendRecieveDrawer /> */}
           </Route>
         </Switch>
       </div>

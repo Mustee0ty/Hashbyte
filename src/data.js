@@ -1,12 +1,26 @@
 import React from "react";
 
+//import Component
+import Switcher from './Component/Switcher'
+
 //import Images
 import ProfilePic from './assets/profilepic.png';
 import WalletHero from './assets/walletHeroImg.png'
 
 //import Svgs
 import WalElipse from './assets/CircularWalletThing.svg'
+import ENG from './assets/EN.svg'
+import USD from './assets/USD.svg'
 
+//import pngs
+import MobileIcon from './assets/MobileIcon.svg';
+import MarketPlaceIcon from './assets/MarketPlaceIcon.svg';
+import PadlockIcon from './assets/PadlockIcon.svg';
+import ThumbPrinticon from './assets/ThumbPrinticon.svg';
+import NotificationIcon from './assets/NotificationIcon.svg';
+import WorldIcon from './assets/WorldIcon.svg'
+import CurrencyIcon from './assets/CurrencyIcon.svg'
+import SunIcon from './assets/SunIcon.svg'
 
 export const computerList = [
   {
@@ -72,9 +86,52 @@ export const profileinfo = [
   {
     id:1,
     name: 'Abdul Rasheed',
-    email: 'abdlrasheed@gmail.com',
+    email: 'abdulrasheed@gmail.com',
     profilepic: ProfilePic,
   }
+]
+
+export const SettingsList = [
+  {
+    id:1,
+    heading:'Utilities',
+    icon1:MobileIcon,
+    icon2:MarketPlaceIcon,
+    text1:'Mobile Top Up',
+    text2:'Market Place',
+    switch1:false,
+    switch2:false,
+  },
+  {
+    id:2,
+    heading:'Security',
+    icon1:PadlockIcon,
+    icon2:ThumbPrinticon,
+    icon3:NotificationIcon,
+    text1:'Setup Pin',
+    text2:'Login with fingerprint',
+    text3:'Notification',
+    switch1:false,
+    switch2:true,
+    switch3:true,
+  },
+  {
+    id:3,
+    heading:'Others',
+    icon1:WorldIcon,
+    icon2:CurrencyIcon,
+    icon3:SunIcon,
+    text1:'Languages',
+    text2:'Currency',
+    text3:'Dark Mode',
+    switch1:false,
+    switch2:false,
+    switch3:true,
+    Languages:true,
+    Currency:true,
+    Lang:ENG,
+    Curr:USD,
+  },
 ]
 
 export const WalletSlides = [

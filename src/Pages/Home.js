@@ -26,7 +26,8 @@ const Home = () => {
 
 
   return (
-    <section className='bg-[#5B63E6] '>
+    <section className='bg-[#5B63E6] h-full w-[360px] justify-center items-center '>
+      {/* <Setting /> */}
       {/* header */}
       <header className='flex min-w-fit flex-row items-center justify-between'>
         {/* Profile picture */}
