@@ -9,12 +9,13 @@ import Logo from '../assets/logo.png';
 import MoneyBag from '../assets/moneybag.png';
 import BitcoinLogo from '../assets/BitcoinLogo.png';
 import BNBLogo from '../assets/BNBLogo.png';
-import Notificatian from '../assets/Notification.png';
+import Notification from '../assets/Notification.png';
 import NavHome from '../assets/NavHome.png';
 import NavPerc from '../assets/NavPercntLogo.png';
 import WalletLogo from '../assets/WalletLogo.png';
 import SignalLogo from '../assets/SignalLogo.png';
 import ExchangeLogo from '../assets/ExchangeLogo.png';
+import ProfilePic from '../assets/profilepic.png'
 
 const Home = () => {
 
@@ -26,26 +27,26 @@ const Home = () => {
 
 
   return (
-    <section className='bg-[#5B63E6] h-full w-[360px] justify-center items-center '>
+    <section className='bg-[#5B63E6] w-[360px] justify-center mx-auto absolute flex flex-col h-full '>
       {/* <Setting /> */}
       {/* header */}
-      <header className='flex min-w-fit flex-row items-center justify-between'>
+      <header className='flex px-[16px] flex-row items-center justify-between'>
         {/* Profile picture */}
         <div>
-          <img onClick={handleImageClick} className='rounded-full' src='' alt="" />
+          <img onClick={handleImageClick} className='rounded-full' src={ProfilePic} alt="" />
         </div>
         {/* Header morning text */}
         <div p-4>
-          <p>Good Morning</p>
+          <p className='text-white text-[15px]'>Good Morning</p>
         </div>
         {/* Notification Bubble */}
-        <img className='bg-blue' src={Notification} alt="" />
+        <img className='text-white' src={Notification} alt="" />
       </header>
       {/* Hero */}
       <div className='w-full flex flex-col'>
         {/* Speed and subtitle */}
-        <div className='flex flex-col items-center p-4'>
-          <h3>72.40 th/s</h3>
+        <div className='flex flex-col items-center pt-[46px]'>
+          <h3  className='font-bold text-[40px]'>72.40 th/s</h3>
           <p>Your processing power</p>
         </div>
         {/* Active and inactive bubbles */}

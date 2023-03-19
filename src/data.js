@@ -6,6 +6,7 @@ import Switcher from './Component/Switcher'
 //import Images
 import ProfilePic from './assets/profilepic.png';
 import WalletHero from './assets/walletHeroImg.png'
+import QrCode from './assets/QrCode.png'
 
 //import Svgs
 import WalElipse from './assets/CircularWalletThing.svg'
@@ -183,4 +184,12 @@ export const OtherWallets = [
       background: '#F18455',
       icon: WalElipse,
     },
+]
+
+export const  QRDetails = [
+  {
+    id:1,
+    qrImage:QrCode,
+    qrAddress:'btcehg453hd344j4ffhdgdjd',
+  }
 ]
