@@ -13,7 +13,12 @@ import WalElipse from './assets/CircularWalletThing.svg'
 import ENG from './assets/EN.svg'
 import USD from './assets/USD.svg'
 
-//import pngs
+//Nav icons
+import Home from './assets/NavIcons/Home.svg'
+import Profitability from './assets/NavIcons/Percentage.svg'
+import WalletIcon from './assets/NavIcons/Wallet.svg'
+import ExchangeIcon from './assets/NavIcons/Exchange.svg'
+import Activity from './assets/NavIcons/Activity.svg'
 import MobileIcon from './assets/MobileIcon.svg';
 import MarketPlaceIcon from './assets/MarketPlaceIcon.svg';
 import PadlockIcon from './assets/PadlockIcon.svg';
@@ -192,4 +197,43 @@ export const  QRDetails = [
     qrImage:QrCode,
     qrAddress:'btcehg453hd344j4ffhdgdjd',
   }
+]
+
+export const WithdrawSuccessDetails = [
+  {
+    id:1,
+    amount: '$567.90',
+    Address: 'tdgfdgfsffshjs354',
+    cryptoAmount: '0.56',
+    cryptoCurrency: 'BTC',
+    date:'4 july 2022, 3.30am'
+  },
+]
+
+export const NavIcons = [
+  {
+    id:1,
+    icon:Home,
+    url:'/Home',
+  },
+  {
+    id:2,
+    icon:Profitability,
+    url:'/Profitability',
+  },
+  {
+    id:3,
+    icon:WalletIcon,
+    url:'/Wallet',
+  },
+  {
+    id:4,
+    icon: Activity,
+    url:'/Activity',
+  },
+  {
+    id:5,
+    icon:ExchangeIcon,
+    url:'/Exchange',
+  },
 ]

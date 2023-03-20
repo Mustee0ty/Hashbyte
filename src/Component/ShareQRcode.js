@@ -1,35 +1,23 @@
 import React, { useState } from 'react';
 
 // import SVGs
-import DownArrow from '../assets/DownArrow.svg'
 import DrawerOpener from '../assets/DrawerOpener.svg'
+import AddressIcon from '../assets/AddressIcon.svg'
 
 // Import data
 import { QRDetails } from '../data';
 
-const [ qrPopUp,setQrPopUp ] = useState(false);
-
-const handleClick = () => {
-  setQrPopUp(!qrPopUp);
-}
-
 const ShareQRcode = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default ShareQRcode
 
 
-const ExpandableMenu = () => {
-  const [expanded, setExpanded] = useState(false);
+  const [ qrPopUp,setQrPopUp ] = useState(false);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
+  const handleClick = () => {
+    setQrPopUp(!qrPopUp);
+  }
+
+
+
 
   return (
     <section className='flex container w-full items-center justify-center h-[819px]'>
@@ -42,11 +30,17 @@ const ExpandableMenu = () => {
           <div>
             <div className='text-white flex flex-col justify-center items-center mt-[101px] mr-[15.21px] ml-[13px] rounded-[20px] w-[334.58px] h-[161px] bg-[#5B3ECB] relative '>
             {
-              SendRecievePopUp.map((item) =>{
-                const { id,amount,text } = item;
+              QRDetails.map((item) =>{
+                const { id,qrImage,qrAddress } = item;
                 return <div className='flex flex-col w-[334px] h-[161px] relative justify-center pl-[20.28px]' key={id}>
-                    <p className='font-normal'>{amount}</p>
-                    <p className='font-light' >{text}</p>
+                    <h4>Share your QR to recieve</h4>
+                    <div>
+                      <img src={qrImage} alt="" />
+                    </div>
+                    <p className='font-light' > Copy the address below </p>
+                    <div>
+                      <img src={AddressIcon} alt="" />
+                    </div>
                 </div>
               })
             }
@@ -56,7 +50,7 @@ const ExpandableMenu = () => {
         }
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default ExpandableMenu;
+export default ShareQRcode

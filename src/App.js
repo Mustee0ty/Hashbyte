@@ -14,6 +14,9 @@ import Setting from './Component/Setting.js';
 import Switcher from './Component/Switcher';
 import Slider from './Component/Slider';
 import SendRecieveDrawer from './Component/SendRecieveDrawer'
+import ShareQRcode from './Component/ShareQRcode.js';
+import WithdrawSuccess from './Component/WithdrawSuccess.js';
+import Nav from './Component/Nav.js';
 
 
 
@@ -26,7 +29,7 @@ const App = () => {
           <Route exact path="/">
             {/* <OnboardingScreen /> */}
             {/* <Upgrade /> */}
-            <Home />
+            {/* <Home /> */}
             {/* <Test /> */}
             {/* <WalletAd /> */}
             {/* <Setting /> */}
@@ -34,6 +37,9 @@ const App = () => {
             {/* <Switcher /> */}
             {/* <Slider /> */}
             {/* <SendRecieveDrawer /> */}
+            {/* <ShareQRcode /> */}
+            {/* <WithdrawSuccess /> */}
+            <Nav />
           </Route>
         </Switch>
       </div>
