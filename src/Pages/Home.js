@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { HomeData,cryptoSlides,GraphData } from '../data.js';
 
 //import Line for crypto chart
-import {
-    Chart as ChartJs,
-    LineElement,
-    CategoryScale,
-    LinearScale,
-    PointElement
-} from 'chart.js';
+// import {
+//     Chart as ChartJs,
+//     LineElement,
+//     CategoryScale,
+//     LinearScale,
+//     PointElement
+// } from 'chart.js';
 
 import { Line } from 'react-chartjs-2'
 
@@ -31,12 +31,12 @@ import ProfilePic from '../assets/profilepic.png'
 import NotificationDot from '../assets/NotificationDot.svg'
 // import HeaderBg from '../assets/HomeBgVectors/HeaderBg.png'
 
-ChartJS.register(
-  LineElement,
-  CategoryScale,
-  LinearScale,
-  PointElement
-)
+// ChartJS.register(
+//   LineElement,
+//   CategoryScale,
+//   LinearScale,
+//   PointElement
+// )
 
 const Home = () => {
 
@@ -146,7 +146,7 @@ const Home = () => {
                 }
               </div>
               <div className='w-[340px] h-[130px]'>
-                <Line data={GraphData} options={options} />
+                {/* <Line data={GraphData} options={options} /> */}
               </div>
             </div>
             </header>

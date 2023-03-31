@@ -29,8 +29,8 @@ const App = () => {
         <Switch>
           <Route exact path="/">
             {/* <OnboardingScreen /> */}
-            {/* <Upgrade /> */}
-            <Home />
+            <Upgrade />
+            {/* <Home /> */}
             {/* <Test /> */}
             {/* <WalletAd /> */}
             {/* <Setting /> */}
