@@ -1,37 +1,39 @@
 import React from "react";
 import "tailwindcss/tailwind.css";
-import heroImage from "../Assets/hero-img.jpg";
-import logoImage from "../Assets/logo.png";
-import Eye from "../Assets/Eye.png";
-import ThumbPrint from "../Assets/Thumbprint.png";
+import heroImage from "../assets/hero-img.jpg";
+import logoImage from "../assets/logo.png";
+import Eye from "../assets/Eye.png";
+import ThumbPrint from "../assets/Thumbprint.png";
 
 function Login() {
   return (
-    <div className="flex flex-row h-screen"> 
-      {/* Left section with logo and text */}
-      <div className="bg-gray-200 w-full md:w-1/2 flex flex-col items-center justify-center">
-        <img src={logoImage} alt="Logo" className="rounded-full h-16 w-16 mb-4" />
-        <h1 className="text-3xl flex mb-2"><p className="font-bold">Welcome&nbsp;</p> back!</h1>
-        <p className="text-gray-600 text-lg mb-6">Please enter your details to login.</p>
-        <div className="flex flex-col w-1/2">
-          <label className="mb-2">Username</label>
-          <input type="text" className="border border-gray-300 hover:border-[#5B63E6] w-full focus:border-[#5B63E6] py-2 px-3 rounded-3xl mb-4"/>
-          <label className="mb-2">Password</label>
+    <div className="flex items-center justify-center">
+      <div className="bg-white w-[360px] h-[800] flex flex-col justify-center">
+        <div>
+          <div className="flex items-center justify-center">
+            <img src={logoImage} alt="Logo" className="rounded-full h-[100px] w-[100px] mb-[31px]" />
+          </div>
+           <div className="text-3xl left-0 flex mb-2 w-[273px] h-[35px] text-[35px] "><p className="font-bold mb-[6px]">Welcome&nbsp;</p> back!</div>
+           <p className="flex justify-start items-start text-gray-600 h-[25px] w-[222px] text-[15px] mb-[30px]">Please enter your details to login.</p>
+        </div>
+       
+        <div className="flex flex-col">
+          <label className="mb-[5px] h-[25px] w-[74px]">Username</label>
+          <input type="text" className="border border-[#5B63E6] w-[300px] h-[56px] focus:border-[#5B63E6] py-2 px-3 rounded-3xl mb-[16px]"/>
+          <label className="mb-[5px]">Password</label>
             <div className="relative">
-            <input type="password" className="lg:w-full border border-gray-300 hover:border-[#5B63E6] py-2 px-3 rounded-3xl mb-4"
+            <input type="password" className="w-[300px] h-[56px] border border-gray-300 hover:border-[#5B63E6] py-2 px-3 rounded-3xl mb-4"
             />
-            <img className="absolute xl:top-[462px] xl:left-[444px] lg:left-[352px] lg:top-[364px] md:top-[400px] " src={Eye} alt="" />
+            <img className="absolute top-[32.7%] left-[73%] " src={Eye} alt="" />
             </div>
-          <div href="#" className="text-sm ml-[252px] lg:ml-[210px] text-[#5B63E6] mb-4 whitespace-nowrap">Forgot password?</div>
-          <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg mb-2">Sign In</button>
-          <button className="bg-gray-300 hover:bg-gray-400 text-gray-700 py-2 px-4 rounded-lg">
-            Sign In with Biometric
-            <img src={ThumbPrint} alt="" />
+          <div href="#" className="text-[13px] flex justify-end mr-[62px] text-[#5B63E6] mb-4 whitespace-nowrap">Forgot password?</div>
+          <button className="h-[62px] w-[300px] bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-[31px] mb-2">Sign In</button>
+          <button className="bg-white h-[62px] w-[300px] flex items-center justify-center text-[#303C5B] py-2 px-4 rounded-[31px] border-[1px] border-[#E8E8E8] ">
+            <img className="mr-[10px]" src={ThumbPrint} alt="" />
+            <p>Sign In with Biometric</p>
             </button>
         </div>
       </div>
-      {/* Right section with hero image */}
-      <div className="hidden md:block bg-cover bg-center lg:w-1/2 w-1/2" style={{ backgroundImage: `url(${heroImage})` }}></div>
     </div>
   );
 }

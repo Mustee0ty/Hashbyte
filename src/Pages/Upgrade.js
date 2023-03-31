@@ -10,7 +10,7 @@ const Upgrade = () => {
   const [isQualistOpen, setIsQualistOpen ] = useState(false);
 
   return (
-    <section className='container mx-auto relative'>
+    <section className='container mx-auto relative w-[360px] h-[800px]'>
     {/* the div with the background */}
       <div className='bg-[#492FA4] pb-10 w-full'>
         <p>Upgrade</p>

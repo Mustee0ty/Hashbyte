@@ -28,6 +28,27 @@ import WorldIcon from './assets/WorldIcon.svg'
 import CurrencyIcon from './assets/CurrencyIcon.svg'
 import SunIcon from './assets/SunIcon.svg'
 
+// cypto SliderSVGs
+import BitcoinLogo from './assets/BitcoinLogo.png'
+import BNBLogo from './assets/BNBLogo.png'
+
+export const HomeData = [
+  {
+    id:1,
+    processingPower:'72.40',
+    activeComputers:'0/4',
+    inactiveComputers:'0/4',
+    upComingPayTime:'9d : 09h : 59m : 23s',
+    maintenanceFees: '-$65',
+    bitcoinAmount:'$48945.89',
+    bnbAmount:'$230.89',
+    rate:'+45.90%',
+    estWeeklyIncome:'$230.89',
+    estMonthlyIncome:'230.89',
+    estYearlyIncome:'3230.89',
+  },
+]
+
 export const computerList = [
   {
     id:1,
@@ -237,3 +258,40 @@ export const NavIcons = [
     url:'/Exchange',
   },
 ]
+
+export const cryptoSlides = [
+  {
+    id:1,
+    logo:BitcoinLogo,
+    cryptoCurrency:'Bitcoin(BTC)',
+    amount:'$48945.89',
+    color:'#5B63E6',
+  },
+  {
+    id:2,
+    logo:BNBLogo,
+    cryptoCurrency:'Binance(BNB)',
+    amount:'$230.89',
+    color:'#FFFFFF'
+  },
+  {
+    id:3,
+    logo:BNBLogo,
+    cryptoCurrency:'NextCrypto',
+    amount:'$435.09',
+    color:'#FFFFFF'
+  },
+]
+
+export const GraphData = {
+  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+  datasets: [
+    {
+      label: 'Bitcoin Price',
+      data: [5000, 6000, 8000, 10000, 12000, 15000],
+      fill: false,
+      borderColor: 'rgb(75, 192, 192)',
+      tension: 0.1,
+    },
+  ]
+}
