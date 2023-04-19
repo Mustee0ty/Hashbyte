@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import DownArrow from '../assets/DownArrow.svg'
+import UpArrow from '../assets/upArrow.png'
 import DrawerOpener from '../assets/DrawerOpener.svg'
 
 //import Data
@@ -21,10 +22,11 @@ const ExpandableMenu = () => {
         <div className='flex flex-row absolute top-[35px]'>
         <button className='flex flex-row justify-center items-center ml-[30.42px] h-[45px] w-[147.01px] bg-[#DEDEDE] rounded-full'>
             <img src={DownArrow} alt="" />
-            <p className='text-[#4c53e8] ml-[13px]'>Recieve</p>
+            <p className='text-[#4c53e8] ml-[12px]'>Recieve</p>
           </button>
           <button className='flex flex-row justify-center items-center ml-[10.14px] h-[45px] w-[147.01px] bg-[#5B63E6] rounded-full'>
-            <p className='text-white'>Send</p>
+            <img src={UpArrow} alt="" />
+            <p className='text-white ml-[12px]'>Send</p>
           </button>
         </div>
         {
@@ -35,28 +37,28 @@ const ExpandableMenu = () => {
               SendRecievePopUp.map((item) =>{
                 const { id,amount,text } = item;
                 return <div className='flex flex-col w-[334px] h-[161px] relative justify-center pl-[20.28px]' key={id}>
-                    <p className='font-normal'>{amount}</p>
-                    <p className='font-light' >{text}</p>
+                    <p className='font-normal text-[#F4F8FF] text-[16px] '>{amount}</p>
+                    <p className='font-light text-[15px] text-white' >{text}</p>
                 </div>
               })
             }
                       
             </div>
             <div className='flex flex-col'>
-              <div className='flex flex-row justify-between pt-[19px] px-4 text-white'>
+              <div className='flex flex-row justify-between pt-[19px] px-4 mb-[10px] text-white'>
                 <h4>Other wallets</h4>
                 <p>+Add</p>
               </div>                
-              <div className='flex flex-row justify-between'>
+              <div className='flex flex-row items-center align-middle justify-between'>
                 {
                   OtherWallets.map((wallet) => {
                     const { id,amount,acctInfo,background,icon } = wallet;
-                    return <div key={wallet.id} >
-                      <div className={`bg-&{background} bg-red-500 w-[157.15px] p-6 text-white items-center justify-center h-[168px] rounded-[15px]`}>
-                      <img src={icon} alt="" />
-                      <p>{amount}</p>
-                      <p className='font-light inline-block'>Available Balance</p>
-                      <p>{acctInfo}</p>
+                    return <div className='mx-[15.21px] w-[157.15px] h-[168px] flex justify-center items-center text-center align-middle text-white rounded-[15px]' key={id} >
+                      <div className={background}>
+                      <img className='mx-auto' src={icon} alt="" />
+                      <p className=''>{amount}</p>
+                      <p className='font-extralight text-[#F4F8FB] inline-block'>Available Balance</p>
+                      <p className=''>{acctInfo}</p>
                       </div>
                     </div>
                   })

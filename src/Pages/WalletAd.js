@@ -3,6 +3,8 @@ import walletHeroImg from '../assets/walletHeroImg.png'
 import walletDot from '../assets/walletdot.png'
 import LongerDot from '../assets/longerdot.png'
 import { WalletAdSlider } from '../data'
+import BackButton from '../assets/BackButton.svg';
+
 
 const WalletAd = () => {
 
@@ -10,32 +12,33 @@ const WalletAd = () => {
   const [ index,setIndex ] = useState(0);
 
   return (
-    <section className='flex flex-col container mx-auto'>
+    <section className='flex flex-col bg-white mx-auto h-[800px] items-center w-[360px]'>
+      <div className='flex flex-row w-full items-center justify-center align-middle mt-[50px]'>
+          <img className=' ' src={BackButton} alt="" />
+          <p className='text-[16px] mx-auto '>Wallet</p>
+        </div>
       {/* Ads Slider */}
-      {/* <header className='rounded-md flex flex-row'>
-        <div className='flex-1'>
-          <p>Do more with Hashbyte</p>
-          <p>Shop,pay for utilities</p>
+      <div className='rounded-[20px] relative flex flex-row bg-gradient-to-l from-[#5B63E6] to-[#A64EFF] pl-[10px] w-[298px] h-[180px] mt-[20px]'>
+        <div className='mt-[37px] pl-[25px] text-[13px] text-white'>
+          <p className='h-[56px] w-[116px] font-semibold text-[18px] leading-[28px]'>Do more with Hashbyte</p>
+          <p className='h-[25px] w-[157px] pt-[16px] text-[15px]'>Shop, pay for utilities</p>
         </div>
-        <div className='flex-2'>
-          <img src={walletHeroImg} alt="" />
+        <div className=''>
+          <img className='h-[181px] w-[210px] object-cover absolute left-[95px]' src={walletHeroImg} alt="" />
         </div>
-      </header> */}
-      <div className='w-[308px] h-[181px] rounded-lg bg-blue-500'>
-
       </div>
-      {/* three dots */}
-      <div className='flex flex-row'>
+      {/* navigation dots */}
+      <div className='flex flex-row mx-auto justify-center w-full mt-[7px]'>
         <img src={walletDot} alt="" />
         <img src={LongerDot} alt="" />
         <img src={walletDot} alt="" />
       </div>
-      {/* Two lower buttons */}
-      <div className='flex flex-col'>
-        <button>
-          MobileTopUp
+      {/* Buttons */}
+      <div className='flex flex-col justify-center items-center mx-auto'>
+        <button className='w-[173px] h-[55px] mt-[28px] text-white rounded-[27.5px] bg-[#5B63E6] text-[18px] items-center justify-center'>
+          Mobile Top Up
         </button>
-        <button>
+        <button className='w-[173px] h-[55px] mt-[16px] text-white rounded-[27.5px] bg-[#5B63E6] text-[18px] items-center justify-center'>
           Marketplace
         </button>
       </div>

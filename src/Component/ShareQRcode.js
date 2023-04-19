@@ -20,26 +20,27 @@ const ShareQRcode = () => {
 
 
   return (
-    <section className='flex container w-full items-center justify-center h-[819px]'>
-      <div className={`${qrPopUp ? 'w-[360px] h-[591px] items-center fixed bottom-0 rounded-t-[44px] bg-[#492FA4]' : 'w-[360px] h-[100px] items-center fixed bottom-0 rounded-t-[44px] bg-[#492FA4]'}  `}>
-        <div onClick={handleClick} className='w-full my-[10px] flex justify-center items-center hover:cursor-pointer '>
+    <section className='flex w-[591px] mx-auto items-center justify-center h-[391px] overflow-auto'>
+      <div className={`${qrPopUp ? 'w-[360px] h-[391px] items-center fixed bottom-0 rounded-t-[44px] bg-[#492FA4]' : 'w-[360px] h-[100px] items-center fixed bottom-0 rounded-t-[44px] bg-[#492FA4]'}  `}>
+        <div onClick={handleClick} className='w-full mt-[10px] flex justify-center items-center hover:cursor-pointer '>
           <img src={DrawerOpener} alt="" />
         </div>
         {
           qrPopUp && 
           <div>
-            <div className='text-white flex flex-col justify-center items-center mt-[101px] mr-[15.21px] ml-[13px] rounded-[20px] w-[334.58px] h-[161px] bg-[#5B3ECB] relative '>
+            <div className='text-white flex flex-col justify-center items-center mx-auto rounded-[20px] w-[334.58px] h-full relative '>
             {
               QRDetails.map((item) =>{
                 const { id,qrImage,qrAddress } = item;
-                return <div className='flex flex-col w-[334px] h-[161px] relative justify-center pl-[20.28px]' key={id}>
-                    <h4>Share your QR to recieve</h4>
-                    <div>
+                return <div className='flex flex-col w-[334px] text-center align-top items-center h-full justify-center' key={id}>
+                    <h4 className='text-[20px] font-semibold py-3'>Share your QR to recieve</h4>
+                    <div className='w-[171px] h-[125px] rounded-[20px] flex justify-center align-middle items-center bg-[#5B3ECB]'>
                       <img src={qrImage} alt="" />
                     </div>
-                    <p className='font-light' > Copy the address below </p>
-                    <div>
-                      <img src={AddressIcon} alt="" />
+                    <p className='font-light mt-[35px] text-[15px] text-[#F4F8FB]' > Copy the address below </p>
+                    <div className='flex flex-row'>
+                      <img className='mr-[8px] text-[15px] leading-[15px] ' src={AddressIcon} alt="" />
+                      <p>{qrAddress}</p>
                     </div>
                 </div>
               })

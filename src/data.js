@@ -200,14 +200,14 @@ export const OtherWallets = [
       id:1,
       amount:'$345,78.90',
       acctInfo: 'Withdrawable',
-      background: '#356AF3',
+      background: 'bg-#356AF3',
       icon: WalElipse,
     },
     {
       id:1,
       amount:'$345,78.90',
       acctInfo: 'Withdrawable',
-      background: '#F18455',
+      background: 'bg-#F18455',
       icon: WalElipse,
     },
 ]
@@ -264,22 +264,28 @@ export const cryptoSlides = [
     id:1,
     logo:BitcoinLogo,
     cryptoCurrency:'Bitcoin(BTC)',
+    cryptoName:'Bitcoin',
     amount:'$48945.89',
     color:'#5B63E6',
+    cryptoSub:'BTC'
   },
   {
     id:2,
     logo:BNBLogo,
     cryptoCurrency:'Binance(BNB)',
+    cryptoName:'BinanceCoin',
     amount:'$230.89',
-    color:'#FFFFFF'
+    color:'#FFFFFF',
+    cryptoSub:'BNB'
   },
   {
     id:3,
     logo:BNBLogo,
     cryptoCurrency:'NextCrypto',
+    cryptoName:'Dogecoin',
     amount:'$435.09',
-    color:'#FFFFFF'
+    color:'#FFFFFF',
+    cryptoSub:'DOGE'
   },
 ]
 
@@ -295,3 +301,58 @@ export const GraphData = {
     },
   ]
 }
+
+export const walletBalance = [
+  {
+    id:1,
+    balance:'0.8956767 BTC',
+    walletType: 'Main Balance',
+  },
+]
+
+export const History = [
+  {
+    id:1,
+    coinLogo:BitcoinLogo,
+    transactionAmount:'$0.93245',
+    time:'5h ago',
+    status:'Success',
+  },
+  {
+    id:2,
+    coinLogo:BNBLogo,
+    transactionAmount:'$0.93245',
+    time:'5h ago',
+    status:'Success',
+  },
+  {
+    id:3,
+    coinLogo:BitcoinLogo,
+    transactionAmount:'$0.93245',
+    time:'5h ago',
+    status:'Success',
+  },
+] 
+
+export const amountBubbles = [
+  {
+    id:1,
+    amount:'50',
+  },
+  {
+    id:2,
+    amount:'100',
+  },
+  {
+    id:3,
+    amount:'200',
+  },
+  {
+    id:4,
+    amount:'1000',
+  },
+  {
+    id:5,
+    amount:'2000',
+  },
+]

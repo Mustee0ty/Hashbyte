@@ -2,6 +2,9 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
    extend: {
+    backgroundImage: theme => ({
+      'withdrawalBgImg' : "",
+    }),
     colors: {
      navPrimary: "#5B63E6",
      navSecondary: "#6D76FF", 

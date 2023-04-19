@@ -9,6 +9,7 @@ import Test from './Pages/Test.js';
 import WalletAd from './Pages/WalletAd.js';
 import Wallet from './Pages/Wallet.js';
 import Login from './Pages/Login.js';
+import Withdrawal from './Pages/Withdrawal.js';
 
 // import Components
 import Setting from './Component/Setting.js';
@@ -28,8 +29,8 @@ const App = () => {
       <div>
         <Switch>
           <Route exact path="/">
-            {/* <OnboardingScreen /> */}
-            <Upgrade />
+1            {/* <OnboardingScreen /> */}
+            {/* <Upgrade /> */}
             {/* <Home /> */}
             {/* <Test /> */}
             {/* <WalletAd /> */}
@@ -40,6 +41,7 @@ const App = () => {
             {/* <SendRecieveDrawer /> */}
             {/* <ShareQRcode /> */}
             {/* <WithdrawSuccess /> */}
+            <Withdrawal />
             {/* <Nav /> */}
             {/* <Login /> */}
           </Route>

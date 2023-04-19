@@ -22,7 +22,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-css": "tailwindcss build src/index.css -o public/styles.css"
   },
   "eslintConfig": {
     "extends": [
@@ -44,12 +45,12 @@
   },
   "devDependencies": {
     "@heroicons/react": "^1.0.6",
-    "autoprefixer": "^10.4.2",
+    "autoprefixer": "^10.4.14",
     "framer-motion": "^6.2.8",
-    "postcss": "^8.4.8",
+    "postcss": "^8.4.21",
     "react-icons": "^4.3.1",
     "react-scroll": "^1.8.7",
     "swiper": "^8.0.7",
-    "tailwindcss": "^3.0.23"
+    "tailwindcss": "^3.3.1"
   }
 }

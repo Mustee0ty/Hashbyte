@@ -146,7 +146,7 @@ const Home = () => {
                 }
               </div>
               <div className='w-[340px] h-[130px]'>
-                {/* <Line data={GraphData} options={options} /> */}
+                <Line data={GraphData} options={options} />
               </div>
             </div>
             </header>

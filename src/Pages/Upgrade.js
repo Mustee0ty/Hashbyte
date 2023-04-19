@@ -17,7 +17,7 @@ const Upgrade = () => {
       <div className='bg-[#492FA4] text-white flex flex-col w-full pb-[23px]'>
         <div className='flex flex-row  justify-between align-middle items-center'>
           <img className='pt-[50px] ml-[16px]' src={BackButton} alt="" />
-          <p className='pt-[50px] text-[16px] mx-[auto] ml-[122px] '>Upgrade</p>
+          <p className='pt-[50px] text-[16px] mx-[auto] ml-[122px] '>Wallet</p>
         </div>
         
         <div className='flex flex-col ml-[33px] pl-0 mt-[25px]'>
