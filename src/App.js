@@ -41,11 +41,11 @@ const App = () => {
             {/* <Slide /> */}
             {/* <SendRecieveDrawer /> */}
             {/* <ShareQRcode /> */}
-            {/* <WithdrawSuccess /> */}
+            <WithdrawSuccess />
             {/* <Withdrawal /> */}
             {/* <Nav /> */}
             {/* <Login /> */}
-            <Verification />
+            {/* <Verification /> */}
           </Route>
         </Switch>
       </div>

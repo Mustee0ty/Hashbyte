@@ -26,6 +26,9 @@
   @apply hidden transform translate-x-[100%]
 }
 
+.tr {
+  @apply h-[35px] w-full px-[20px]
+ }
 /* .bg-withdrawalheader {
   @apply bg-withdrawalBgImg
 } */
