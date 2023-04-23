@@ -310,7 +310,7 @@ export const walletBalance = [
   },
 ]
 
-export const History = [
+export const HistoryData = [
   {
     id:1,
     coinLogo:BitcoinLogo,

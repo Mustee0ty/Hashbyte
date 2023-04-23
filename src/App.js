@@ -11,6 +11,7 @@ import Wallet from './Pages/Wallet.js';
 import Login from './Pages/Login.js';
 import Withdrawal from './Pages/Withdrawal.js';
 import Verification from './Pages/Verification.js';
+import MiningWallet from './Pages/MiningWallet.js';
 
 // import Components
 import Setting from './Component/Setting.js';
@@ -41,11 +42,12 @@ const App = () => {
             {/* <Slide /> */}
             {/* <SendRecieveDrawer /> */}
             {/* <ShareQRcode /> */}
-            <WithdrawSuccess />
+            {/* <WithdrawSuccess /> */}
             {/* <Withdrawal /> */}
             {/* <Nav /> */}
             {/* <Login /> */}
             {/* <Verification /> */}
+            <MiningWallet />
           </Route>
         </Switch>
       </div>
