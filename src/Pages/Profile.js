@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "../Component/Container";
 import BackButton from "../assets/BackButton.svg";
 import { FiSearch } from "react-icons/fi";
 import MarketImage from "../assets/marketImage.png";
+import ConfirmPurchaseOrder from "../Component/ConfirmPurchase";
 
 const Profile = () => {
+  const [confirmation, setConfirmation] = useState(false);
+  const hideScrollingOnOpen = () => {
+    document.body.style.overflowY = "hidden";
+  };
   return (
     <Container>
       <div>
@@ -12,7 +17,7 @@ const Profile = () => {
           <button>
             <img src={BackButton} alt="" />
           </button>
-          <p className="text-[16px] font-bold leading-[35px]">Profile</p>
+          <p className="text-[16px] font-bold leading-[35px]">Marketplace</p>
         </div>
       </div>
       <div className="mt-[19px]">
@@ -185,12 +190,23 @@ const Profile = () => {
             <h3 className="text-[14px] font-bold">$12.00</h3>
           </div>
           <div className="pl-[13px]">
-            <button className="w-[89px] mb-[12px] h-[32px] flex items-center justify-center rounded-[16px] bg-[#5B63E6]">
+            <button
+              onClick={() => {
+                setConfirmation(true);
+                hideScrollingOnOpen();
+              }}
+              className="w-[89px] mb-[12px] h-[32px] flex items-center justify-center rounded-[16px] bg-[#5B63E6]"
+            >
               <p className="text-[14px] font-normal text-white">Buy Now</p>
             </button>
           </div>
         </div>
       </div>
+      {confirmation && (
+        <div className="absolute top-[590px] left-0">
+          <ConfirmPurchaseOrder setConfirmation={setConfirmation} />
+        </div>
+      )}
     </Container>
   );
 };

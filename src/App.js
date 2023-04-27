@@ -23,6 +23,7 @@ import WithdrawSuccess from "./Component/WithdrawSuccess.js";
 import Nav from "./Component/Nav.js";
 import MobileTopUp from "./Pages/MobileTopUp.js";
 import Profile from "./Pages/Profile.js";
+import MarketPlace from "./Pages/MarketPlace.js";
 
 const App = () => {
   return (
@@ -49,6 +50,7 @@ const App = () => {
             {/* <MiningWallet /> */}
             {/* <MobileTopUp /> */}
             <Profile />
+            {/* <MarketPlace /> */}
           </Route>
         </Switch>
       </div>

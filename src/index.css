@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Raleway:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Raleway:wght@300;400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -7,28 +7,32 @@
 /* @import url('./assets/Notification.png');
 @import url('./assets/HomeBgVectors/HeaderBg.png'); */
 
-.prev{
-  @apply  absolute top-[200px] translate-y-[-50%] grid items-center left-0
+.prev {
+  @apply absolute top-[200px] translate-y-[-50%] grid items-center left-0;
 }
- .next{
-  @apply  absolute top-[200px] translate-y-[-50%] grid items-center right-0
- }
+.next {
+  @apply absolute top-[200px] translate-y-[-50%] grid items-center right-0;
+}
 
- .activeSlide {
-  @apply  w-full flex justify-center align-middle items-center transform mx-auto h-[180px] opacity-100 translate-x-0
- }
+.activeSlide {
+  @apply w-full flex justify-center align-middle items-center transform mx-auto h-[180px] opacity-100 translate-x-0;
+}
 
 .lastSlide {
-  @apply hidden transform translate-x-[-100%]
+  @apply hidden transform translate-x-[-100%];
 }
 
 .nextSlide {
-  @apply hidden transform translate-x-[100%]
+  @apply hidden transform translate-x-[100%];
 }
 
 .tr {
-  @apply h-[35px] w-full px-[20px]
- }
+  @apply h-[35px] w-full px-[20px];
+}
 /* .bg-withdrawalheader {
   @apply bg-withdrawalBgImg
 } */
+
+.shadow_top {
+  box-shadow: 0 -5px 0 #ccc;
+}
