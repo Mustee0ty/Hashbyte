@@ -4,9 +4,11 @@ import BackButton from "../assets/BackButton.svg";
 import { FiSearch } from "react-icons/fi";
 import MarketImage from "../assets/marketImage.png";
 import ConfirmPurchaseOrder from "../Component/ConfirmPurchase";
+import OrderSuccesfull from "../Component/OrderSuccessful";
 
 const Profile = () => {
   const [confirmation, setConfirmation] = useState(false);
+  const [orderPlaced, setOrderPlaced] = useState(false);
   const hideScrollingOnOpen = () => {
     document.body.style.overflowY = "hidden";
   };
@@ -203,8 +205,16 @@ const Profile = () => {
         </div>
       </div>
       {confirmation && (
-        <div className="absolute top-[590px] left-0">
-          <ConfirmPurchaseOrder setConfirmation={setConfirmation} />
+        <div className="absolute top-[570px] left-0">
+          <ConfirmPurchaseOrder
+            setConfirmation={setConfirmation}
+            setOrderPlaced={setOrderPlaced}
+          />
+        </div>
+      )}
+      {orderPlaced && (
+        <div className="absolute top-[570px] left-0">
+          <OrderSuccesfull setOrderPlaced={setOrderPlaced} />
         </div>
       )}
     </Container>
