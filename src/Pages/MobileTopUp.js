@@ -8,7 +8,6 @@ const MobileTopUp = () => {
   return (
     <Container>
       <div>
-        <div>{/* vector */}</div>
         <div className="mt-[30px] flex gap-[103px]">
           <button>
             <img src={BackButton} alt="" />

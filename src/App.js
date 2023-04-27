@@ -22,6 +22,7 @@ import ShareQRcode from "./Component/ShareQRcode.js";
 import WithdrawSuccess from "./Component/WithdrawSuccess.js";
 import Nav from "./Component/Nav.js";
 import MobileTopUp from "./Pages/MobileTopUp.js";
+import Profile from "./Pages/Profile.js";
 
 const App = () => {
   return (
@@ -45,8 +46,9 @@ const App = () => {
             {/* <Nav /> */}
             {/* <Login /> */}
             {/* <Verification /> */}
-            <MiningWallet />
+            {/* <MiningWallet /> */}
             {/* <MobileTopUp /> */}
+            <Profile />
           </Route>
         </Switch>
       </div>
