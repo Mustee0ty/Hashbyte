@@ -1,5 +1,5 @@
 import React from 'react';
-import { profileinfo,SettingsList } from '../data';
+import { Profileinfo,SettingsList } from '../data';
 
 //import components
 import Switcher from '../Component/Switcher'
@@ -17,7 +17,7 @@ const Setting = () => {
       <div className='pt-[21px] flex flex-col'>
       {
         // Profile info section
-        profileinfo.map((info) => {
+        Profileinfo.map((info) => {
         const { id, name, email, profilepic } = info
         return (
           <div key={id} className='ml-[20px]'>

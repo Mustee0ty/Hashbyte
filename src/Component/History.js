@@ -5,7 +5,7 @@ import { HistoryData } from '../data';
 const History = () => {
   return (
           <div className='h-[322px] mx-auto flex flex-col items-center justify-center align-middle'>
-          <h3 className='font-bold text-[18px] w-full justify-start container mx-auto flex pl-[5vh]'>History</h3>
+          <h3 className='font-bold text-[18px] w-[300px] justify-start container mx-auto flex'>History</h3>
             <ul>
             {
             HistoryData.map((transaction) =>{

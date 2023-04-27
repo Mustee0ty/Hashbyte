@@ -23,7 +23,7 @@ const MiningWallet = () => {
   };
 
   return (
-    <section className='lg:w-[360px] lg:h-[980px] sm:w-max-screen sm:h-screen mx-auto bg-[#F8F7FE]' >
+    <section className='lg:w-[360px] lg:h-[980px] sm:w-screen sm:h-screen mx-auto bg-[#F8F7FE]' >
       {/* Nav */}
       <div className='flex items-center justify-center align-middle mb-[18px]'>
                 {/* BackButton */}

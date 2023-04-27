@@ -1,37 +1,37 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import React from "react"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
 //import pages
-import OnboardingScreen from './Pages/OnboardingScreen.js';
-import Home from './Pages/Home.js';
-import Upgrade from './Pages/Upgrade.js';
-import Test from './Pages/Test.js';
-import WalletAd from './Pages/WalletAd.js';
-import Wallet from './Pages/Wallet.js';
-import Login from './Pages/Login.js';
-import Withdrawal from './Pages/Withdrawal.js';
-import Verification from './Pages/Verification.js';
-import MiningWallet from './Pages/MiningWallet.js';
+import OnboardingScreen from "./Pages/OnboardingScreen.js"
+import Home from "./Pages/Home.js"
+import Upgrade from "./Pages/Upgrade.js"
+import Test from "./Pages/Test.js"
+import WalletAd from "./Pages/WalletAd.js"
+import Wallet from "./Pages/Wallet.js"
+import Login from "./Pages/Login.js"
+import Withdrawal from "./Pages/Withdrawal.js"
+import Verification from "./Pages/Verification.js"
+import MiningWallet from "./Pages/MiningWallet.js"
+import Profile from "./Pages/Profile.js"
 
 // import Components
-import Setting from './Component/Setting.js';
-import Switcher from './Component/Switcher';
-import Slide from './Component/Slide';
-import SendRecieveDrawer from './Component/SendRecieveDrawer'
-import ShareQRcode from './Component/ShareQRcode.js';
-import WithdrawSuccess from './Component/WithdrawSuccess.js';
-import Nav from './Component/Nav.js';
-
-
-
+import Setting from "./Component/Setting.js"
+import Switcher from "./Component/Switcher"
+import Slide from "./Component/Slide"
+import SendRecieveDrawer from "./Component/SendRecieveDrawer"
+import ShareQRcode from "./Component/ShareQRcode.js"
+import WithdrawSuccess from "./Component/WithdrawSuccess.js"
+import Nav from "./Component/Nav.js"
+import Notification from "./Component/Notification.js"
+import Profitability from "./Pages/Profitability.js"
 
 const App = () => {
-  return(
+  return (
     <Router>
       <div>
         <Switch>
           <Route exact path="/">
-           {/* <OnboardingScreen /> */}
+            {/* <OnboardingScreen /> */}
             {/* <Upgrade /> */}
             {/* <Home /> */}
             {/* <Test /> */}
@@ -47,12 +47,15 @@ const App = () => {
             {/* <Nav /> */}
             {/* <Login /> */}
             {/* <Verification /> */}
-            <MiningWallet />
+            {/* <MiningWallet /> */}
+            {/* <Profile /> */}
+            {/* <Notification /> */}
+            <Profitability />
           </Route>
         </Switch>
       </div>
     </Router>
   )
-};
+}
 
-export default App;
+export default App
