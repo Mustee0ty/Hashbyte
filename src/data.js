@@ -7,6 +7,7 @@ import Switcher from "./Component/Switcher"
 import ProfilePic from "./assets/profilepic.png"
 import WalletHero from "./assets/walletHeroImg.png"
 import QrCode from "./assets/QrCode.png"
+import SSDImage from "./assets/marketImage.png"
 
 //import Svgs
 import WalElipse from "./assets/CircularWalletThing.svg"
@@ -422,5 +423,56 @@ export const CurrencyList = [
   {
     id: 3,
     text: "Currency3",
+  },
+]
+
+export const products = [
+  {
+    id: 1,
+    name: "DDR3 SDRAM",
+    price: "10.99",
+    image: SSDImage,
+    sold: "10",
+    cryptoPrice: "0.5678 BTC",
+  },
+  {
+    id: 2,
+    name: "Product 1",
+    price: "10.99",
+    image: SSDImage,
+    sold: "10",
+    cryptoPrice: "0.5678 BTC",
+  },
+  {
+    id: 3,
+    name: "Product 1",
+    price: "10.99",
+    image: SSDImage,
+    sold: "10",
+    cryptoPrice: "0.5678 BTC",
+  },
+  {
+    id: 4,
+    name: "Product 1",
+    price: "10.99",
+    image: SSDImage,
+    sold: "10",
+    cryptoPrice: "0.5678 BTC",
+  },
+  {
+    id: 5,
+    name: "Product 1",
+    price: "10.99",
+    image: SSDImage,
+    sold: "10",
+    cryptoPrice: "0.5678 BTC",
+  },
+  {
+    id: 6,
+    name: "Product 1",
+    price: "10.99",
+    image: SSDImage,
+    sold: "10",
+    cryptoPrice: "0.5678 BTC",
   },
 ]

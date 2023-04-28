@@ -12,7 +12,10 @@ import Login from "./Pages/Login.js"
 import Withdrawal from "./Pages/Withdrawal.js"
 import Verification from "./Pages/Verification.js"
 import MiningWallet from "./Pages/MiningWallet.js"
+import MobileTopUp from "./Pages/MobileTopUp.js"
 import Profile from "./Pages/Profile.js"
+import MarketPlace from "./Pages/MarketPlace.js"
+import Profitability from "./Pages/Profitability.js"
 
 // import Components
 import Setting from "./Component/Setting.js"
@@ -23,7 +26,8 @@ import ShareQRcode from "./Component/ShareQRcode.js"
 import WithdrawSuccess from "./Component/WithdrawSuccess.js"
 import Nav from "./Component/Nav.js"
 import Notification from "./Component/Notification.js"
-import Profitability from "./Pages/Profitability.js"
+import OrderSuccessful from "./Component/OrderSuccessful.js"
+import ConfirmPurcase from "./Component/ConfirmPurchase.js"
 
 const App = () => {
   return (
@@ -48,9 +52,13 @@ const App = () => {
             {/* <Login /> */}
             {/* <Verification /> */}
             {/* <MiningWallet /> */}
-            {/* <Profile /> */}
             {/* <Notification /> */}
-            <Profitability />
+            {/* <Profitability /> */}
+            {/* <MobileTopUp /> */}
+            {/* <Profile /> */}
+            <MarketPlace />
+            {/* <OrderSuccessful /> */}
+            {/* <ConfirmPurcase /> */}
           </Route>
         </Switch>
       </div>
