@@ -1,5 +1,6 @@
-import React from "react"
+import React, { useState } from "react"
 import { Profileinfo, SettingsList } from "../data"
+import { Link } from "react-router-dom"
 
 //import components
 import Switcher from "../Component/Switcher"
@@ -7,18 +8,31 @@ import Switcher from "../Component/Switcher"
 //import icons
 import BackButton from "../assets/BackButton.svg"
 
-const Setting = (props) => {
+const Setting = () => {
+  const [closeIt, setCloseIt] = useState(false)
+
+  const handleCloseIt = () => {
+    setCloseIt(!closeIt)
+  }
+
   return (
-    <section className="bg-white w-[295px] h-screen flex flex-col rounded-md shadow-2xl mx-auto absolute z-0">
+    <section
+      className={`${
+        closeIt
+          ? "hidden"
+          : "bg-white w-[295px] h-screen flex flex-col rounded-md shadow-2xl mx-auto absolute z-0"
+      }`}
+    >
       <div className="h-[70px] pl-[20px] border-b">
-        <img
-          onClick={() => {
-            handleImageClick
-          }}
-          className="fill-[#908DA0] my-[32px] left-[20px] cursor-pointer"
-          src={BackButton}
-          alt=""
-        />
+        <Link to={"/home"}>
+          {" "}
+          <img
+            onClick={handleCloseIt}
+            className="fill-[#908DA0] my-[32px] left-[20px] cursor-pointer"
+            src={BackButton}
+            alt=""
+          />
+        </Link>
       </div>
       <div className="pt-[21px] flex flex-col">
         {
@@ -64,6 +78,7 @@ const Setting = (props) => {
               Currency,
               Lang,
               Curr,
+              url,
             } = listItems
             return (
               <div
@@ -114,27 +129,6 @@ const Setting = (props) => {
             )
           })}
         </div>
-        {/* pop up functionality
-        {/* 
-            import React from 'react';
-
-            const Sidebar = ({ onClose }) => {
-              return (
-                <div className="fixed top-0 left-0 bottom-0 bg-white w-4/5 transition-all duration-500 z-40">
-                  <button className="absolute top-0 right-0 bg-blue-500 text-white px-4 py-2 rounded-l-md focus:outline-none" onClick={onClose}>
-                    Close
-                  </button>
-                  <div className="flex flex-col items-center justify-center h-full">
-                    <p className="text-2xl font-bold mb-4">Sidebar</p>
-                    <p className="text-lg">Here's where you can put more content.</p>
-                  </div>
-                </div>
-              );
-            };
-
-export default Sidebar;
-  
-        */}
       </div>
     </section>
   )

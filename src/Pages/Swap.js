@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 // import Components
 import SwapLogo from "../Component/SwapHistory"
@@ -22,7 +23,9 @@ const Swap = () => {
     <section className="w-[360px] h-screen bg-[#ffffff] mx-auto">
       {/* Backbutton and Heading */}
       <div className="flex flex-row mt-[23px] ">
-        <img className="ml-[19px]" src={BackButton} alt="" />
+        <Link to={"/home"}>
+          <img className="ml-[19px]" src={BackButton} alt="" />
+        </Link>
         <p className="text-black ml-[131px] ">Swap</p>
       </div>
       {/* Exchange Dropdown */}

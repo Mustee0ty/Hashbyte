@@ -12,7 +12,8 @@ import BackButton from "../assets/BackButton.svg"
 import MoneyBag from "../assets/moneybag.png"
 import BNBLogo from "../assets/BNBLogo.png"
 import BitcoinLogo from "../assets/BitcoinLogo.png"
-import { data } from "autoprefixer"
+
+import { Link } from "react-router-dom"
 
 // Slider Data
 const sliderz = [
@@ -69,9 +70,12 @@ const Wallet = () => {
   return (
     <section className="h-screen w-[360px] flex flex-col mx-auto bg-[#F9F8FF] overflow-auto ">
       {/* BackButton */}
-      <button>
-        <img className="mt-[30px]" src={BackButton} alt="" />
-      </button>
+      <Link to={"/home"}>
+        <button>
+          <img className="mt-[30px]" src={BackButton} alt="" />
+        </button>
+      </Link>
+
       {/* Trading mining switch button */}
 
       <div className="w-[360px] relative mx-auto">

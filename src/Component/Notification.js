@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 // import Icons
 
@@ -14,7 +15,9 @@ const Notification = () => {
   return (
     <section className="flex flex-col mx-auto h-screen w-[360px] bg-[#f8f7fe] relative  ">
       <div className="flex flex-row justify-between px-[10px] mb-[18px] mt-[23px]">
-        <img src={BackButton} alt="" />
+        <Link to={"/home"}>
+          <img className="cursor-pointer" src={BackButton} alt="" />
+        </Link>
         <p className="text-[#303c5b] font-semibold">Notification</p>
         <button className="text-[#515b7d] font-semibold">Clear</button>
       </div>

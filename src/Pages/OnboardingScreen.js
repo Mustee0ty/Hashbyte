@@ -1,40 +1,64 @@
-import React from 'react'
-import LeftU from '../assets/LeftU.png';
-import RightBroken from '../assets/Rightbroken.png';
+import React from "react"
+import BigMiddleThing from "../assets/BigMiddleThing.svg"
+import BrokenRight from "../assets/BrokenRight.png"
+import MiddleThing from "../assets/middlething.jpg"
+import CircleThing from "../assets/CricleThing.png"
+import DownCircleThing from "../assets/DownCircleThing.png"
+
+import { Link } from "react-router-dom"
 
 const OnboardingScreen = () => {
   return (
-    <section className='mx-auto h-screen items-cente'>
-      {/* login container */}
-      <div className='container mx-auto w-screen'>
-        <div>
-          <button className='text-white font-nexa'>
-            Skip
-          </button>
-          <div className='flex flex-col'>
-            <img className='h-[184px] w-[184px] top-[241px] left-[241px] ' src={RightBroken} alt="" />
-            <img className='h-[39px] w-[50px]' src={LeftU} alt="" />
-          </div>
-          <div>
-            <p className='text-gray-100'>Welcome to Hashbyte</p>
-            <p className='font-NexaLight'>Earn money renting our linux processing power</p>
-            {/* There dots*/}
-          </div>
-          <button className='border rounded border-white'>
-            Get started
-          </button>
-        </div>
-      </div>
+    <section className="mx-auto flex justify-center overflow-hidden  h-screen w-[360px] bg-gradient-to-b from-purple-700 via-purple-900 to-blue-900 text-white relative">
+      <Link to={"/login"}>
+        <button className="absolute right-0 text-[15px] mr-[25px] mt-[31px] ">
+          Skip
+        </button>
+      </Link>
+      <img
+        className="h-max w-max absolute top-[106px] right-0"
+        src={BrokenRight}
+        alt=""
+      />
+      <img
+        className="h-max w-max absolute top-[155px] right-0"
+        src={BigMiddleThing}
+        alt=""
+      />
+      <img
+        className="absolute left-[41px]  top-[218px]"
+        src={CircleThing}
+        alt=""
+      />
+      <img
+        className="h-max w-max absolute left-[77px] top-[249px] "
+        src={MiddleThing}
+        alt=""
+      />
+      <p className="w-[273px] h-[110px] text-[35px] absolute top-[350px]">
+        Welcome to <br />
+        <p className="font-bold text-[34px]">Hashbyte</p>
+      </p>
+      <p className="absolute top-[479px] font-extralight left-[42px]">
+        Earn money renting your linux
+        <br /> processing power
+      </p>
+      <img
+        className="absolute h-max w-max right-0 top-[519px]"
+        src={DownCircleThing}
+        alt=""
+      />
+      <img
+        className="absolute h-max w-max right-[-4px] top-[549.5px]"
+        src={MiddleThing}
+        alt=""
+      />
+      <Link to={"/login"}>
+        <button className="w-[277px] h-[61px] absolute rounded-[30.5px] flex items-center align-middle justify-center border-[0.5px] border-white bg-transparent text-white box-border left-[41px] top-[601px] z-50">
+          Get Started
+        </button>
+      </Link>
     </section>
-  //   <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-  //   <h1 className="text-4xl font-bold mb-8">Welcome to Hashbyte</h1>
-  //   <h3>Earn money renting your linux procesing power</h3>
-  //   {/* three dots */}
-  //   {/* Some dots */}
-  //   <button className="border-white border-2 rounded-lg text-white py-2 px-4 bg-transparent hover:bg-white hover:text-gray-900">
-  //     Get Started
-  //   </button>
-  // </div>
   )
 }
 

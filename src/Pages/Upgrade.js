@@ -23,11 +23,14 @@ const Upgrade = () => {
           src={BgImg}
           alt=""
         />
-        <div className="flex flex-row  justify-between align-middle items-center">
-          <img className="pt-[50px] ml-[16px]" src={BackButton} alt="" />
-          <p className="pt-[50px] text-[16px] mx-[auto] ml-[122px] ">Wallet</p>
-        </div>
-
+        <Link to={"/home"}>
+          <div className="flex flex-row  justify-between align-middle items-center">
+            <img className="pt-[50px] ml-[16px]" src={BackButton} alt="" />
+            <p className="pt-[50px] text-[16px] mx-[auto] ml-[122px] ">
+              Upgrade
+            </p>
+          </div>
+        </Link>
         <div className="flex flex-col ml-[33px] pl-0 mt-[25px]">
           <p className="font-semibold text-[25px] leading-[35px]">72.40 th/s</p>
           <p className="text-[16px] leading-[22px]">Current processing power</p>

@@ -11,9 +11,9 @@ import ThumbPrint from "../assets/Thumbprint.png"
 function Login() {
   return (
     <div className="flex items-center justify-center mx-auto h-screen max-w-screen-sm">
-      <div className="bg-white w-[360px] h-[800] flex flex-col justify-center mt-[46px]">
+      <div className="bg-white w-[360px] h-[800] flex flex-col justify-center mt-[46px] mx-auto">
         <div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center mx-auto">
             <img
               src={logoImage}
               alt="Logo"
@@ -60,7 +60,9 @@ function Login() {
 
           <button className="bg-white h-[62px] w-[300px] flex items-center justify-center text-[#303C5B] py-2 px-4 rounded-[31px] border-[1px] border-[#E8E8E8] ">
             <img className="mr-[10px]" src={ThumbPrint} alt="" />
-            <p>Sign In with Biometric</p>
+            <Link to={"/home"}>
+              <p>Sign In with Biometric</p>
+            </Link>
           </button>
         </div>
       </div>

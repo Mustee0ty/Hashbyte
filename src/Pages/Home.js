@@ -44,7 +44,7 @@ const Home = () => {
   const [showSettings, setShowsettings] = useState(false)
 
   const handleImageClick = () => {
-    setShowsettings(!showSettings)
+    setShowsettings(true)
   }
 
   // const options = {
@@ -88,22 +88,26 @@ const Home = () => {
             </div>
             <header className="h-[471px] w-[360px] bg-transparent bg-gradient-to-r from-purple-800 via-purple-900 to-blue-900 flex flex-col text-white relative ">
               <img className="absolute top-0" src={BgImg} alt="" />
-              <button className="flex flex-row cursor-pointer  justify-between px-[15px] mb-[23px] pt-4">
+              <button
+                onClick={handleImageClick}
+                className="flex flex-row cursor-pointer  justify-between px-[15px] mb-[23px] pt-4 z-40"
+              >
                 <img
-                  onClick={handleImageClick}
                   className="rounded-full cursor-pointer z-10"
                   src={ProfilePic}
                   alt=""
                 />
                 <p className="text-white">Good Morning</p>
-                <div className="bg-">
-                  <img className="relative" src={Notification} alt="" />
-                  <img
-                    className="absolute top-3.5 right-4"
-                    src={NotificationDot}
-                    alt=""
-                  />
-                </div>
+                <Link to={"/notification"}>
+                  <div className="bg-">
+                    <img className="relative" src={Notification} alt="" />
+                    <img
+                      className="absolute top-3.5 right-4"
+                      src={NotificationDot}
+                      alt=""
+                    />
+                  </div>
+                </Link>
               </button>
               <div className="flex flex-col items-center mb-[26px] ">
                 <h3 className="text-[#F4F8FF] leading-[50px] text-[40px]">
