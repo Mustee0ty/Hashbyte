@@ -36,3 +36,7 @@
 .shadow_top {
   box-shadow: 0 -5px 0 #ccc;
 }
+
+.primary {
+  @apply bg-[#5B63E6];
+}

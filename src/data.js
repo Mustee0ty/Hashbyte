@@ -8,6 +8,7 @@ import ProfilePic from "./assets/profilepic.png"
 import WalletHero from "./assets/walletHeroImg.png"
 import QrCode from "./assets/QrCode.png"
 import SSDImage from "./assets/marketImage.png"
+import TetherLogo from "./assets/TetherIcon.png"
 
 //import Svgs
 import WalElipse from "./assets/CircularWalletThing.svg"
@@ -259,7 +260,7 @@ export const NavIcons = [
   {
     id: 5,
     icon: ExchangeIcon,
-    url: "/Exchange",
+    url: "/swap",
   },
 ]
 
@@ -474,5 +475,84 @@ export const products = [
     image: SSDImage,
     sold: "10",
     cryptoPrice: "0.5678 BTC",
+  },
+]
+
+export const swappables = [
+  {
+    id: 1,
+    swap: "BTC/USDT",
+  },
+  {
+    id: 2,
+    swap: "BNB/USDT",
+  },
+  {
+    id: 3,
+    swap: "DOGE/USDT",
+  },
+  {
+    id: 4,
+    swap: "SOL/USDT",
+  },
+  {
+    id: 5,
+    swap: "ETH/USDT",
+  },
+]
+
+export const swapTime = [
+  {
+    id: 1,
+    time: "12h",
+  },
+  {
+    id: 2,
+    time: "1d",
+  },
+  {
+    id: 3,
+    time: "1w",
+  },
+  {
+    id: 4,
+    time: "1m",
+  },
+  {
+    id: 5,
+    time: "6m",
+  },
+  {
+    id: 6,
+    time: "All",
+  },
+]
+
+export const swapHistory = [
+  {
+    id: 1,
+    icon1: BitcoinLogo,
+    icon2: TetherLogo,
+    transactionAmount: "$0.93245",
+    status: true,
+    time: "1h",
+  },
+]
+
+export const ActivitiesNav = [
+  {
+    id: 1,
+    text: "Week",
+    url: "/week",
+  },
+  {
+    id: 2,
+    text: "Month",
+    url: "/Month",
+  },
+  {
+    id: 3,
+    text: "Year",
+    url: "/Year",
   },
 ]

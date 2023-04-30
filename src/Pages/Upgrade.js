@@ -1,9 +1,11 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 //import icons
-import DownArrow from "../assets/DownArrow.svg"
+import DownArrow from "../assets/DownGreyArrow.png"
 import BackButton from "../assets/BackButton.svg"
 import WhiteCap from "../assets/WhiteCap.png"
+import BgImg from "../assets/HomeBgVectors/HeaderBg.png"
 
 // import data
 import { computerList, QualityList } from "../data"
@@ -15,7 +17,12 @@ const Upgrade = () => {
   return (
     <section className="mx-auto w-[360px] h-[800px]">
       {/* the div with the background */}
-      <div className="bg-[#492FA4] text-white flex flex-col w-full pb-[23px]">
+      <div className="bg-[#492FA4] text-white flex flex-col w-full pb-[23px] relative">
+        <img
+          className="absolute top-0 right-0 w-[230px] h-[198px]"
+          src={BgImg}
+          alt=""
+        />
         <div className="flex flex-row  justify-between align-middle items-center">
           <img className="pt-[50px] ml-[16px]" src={BackButton} alt="" />
           <p className="pt-[50px] text-[16px] mx-[auto] ml-[122px] ">Wallet</p>
@@ -36,14 +43,17 @@ const Upgrade = () => {
               alt=""
             />
 
-            <p className="w-[323px] h-[60px] px-1">
+            <p className="w-[323px] h-[60px] text-center text-[14px] text-[#6f6e7c] px-1">
               Please select the computer you would like to upgrade & add to your
               exsisting processing power
             </p>
           </div>
           {/* Select computer dropdown */}
-          <div className="flex flex-col pl-[15px]">
-            <p className="mt-[19px]"> Select computer </p>
+          <div className="flex flex-col mt-[19px] pl-[15px]">
+            <p className="mt-[19px] text-[15px] text-[#9192a1] ">
+              {" "}
+              Select computer{" "}
+            </p>
             <button className="relative flex flex-col  border-[1px] rounded-[28px] h-[50px] w-[330px]">
               <div className="">
                 <button
@@ -73,7 +83,9 @@ const Upgrade = () => {
               </div>
             </button>
             {/* Quality dropdown */}
-            <p>Select Quality</p>
+            <p className="mt-[19px] text-[15px] text-[#9192a1]">
+              Select Quality
+            </p>
             <div className="relative flex flex-col  border-[1px] rounded-[28px] h-[50px] w-[330px]">
               <button
                 className="absolute top-[43.12%] left-[86.39%]"
@@ -104,28 +116,36 @@ const Upgrade = () => {
             <section>
               {/* Current Processing Power  */}
               <div>
-                <p>Current processing power</p>
+                <p className="text-[#9192a1] text-[15px] mt-[15px] ">
+                  Current processing power
+                </p>
                 <div className="relative flex flex-col  border-[1px] rounded-[28px] h-[50px] justify-center width-[330px]">
                   <p className="ml-[20px]">109.98 th/s</p>
                 </div>
               </div>
               {/* Total processing power after after upgrade  */}
               <div>
-                <p>Total processing power after after upgrade</p>
+                <p className="text-[#9192a1] text-[15px] mt-[15px]">
+                  Total processing power after after upgrade
+                </p>
                 <div className="relative flex flex-col  border-[1px] rounded-[28px] h-[50px] justify-center w-[330px]">
                   <p className="ml-[20px]">109.98 th/s</p>
                 </div>
               </div>
               {/* Est earning daily after upgrade  */}
               <div>
-                <p>Est earning daily after upgrade</p>
+                <p className="text-[#9192a1] text-[15px] mt-[15px]">
+                  Est earning daily after upgrade
+                </p>
                 <div className="relative flex flex-col  border-[1px] rounded-[28px] h-[50px] justify-center w-[330px]">
                   <p className="ml-[20px]">$45</p>
                 </div>
               </div>
-              <button className="relative flex flex-col  border-[1px] rounded-[28px] h-[61px] mt-[9px] w-[330px] justify-center items-center bg-[#5B63E6] text-white">
-                <p>Upgrade now</p>
-              </button>
+              <Link>
+                <button className="relative flex flex-col  border-[1px] rounded-[28px] h-[61px] mt-[9px] w-[330px] justify-center items-center bg-[#5B63E6] text-white">
+                  <p>Upgrade now</p>
+                </button>
+              </Link>
             </section>
           </div>
         </div>
