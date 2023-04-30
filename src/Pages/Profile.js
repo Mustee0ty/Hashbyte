@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 // import data
 import { Profileinfo, SettingsList } from "../data"
@@ -94,15 +95,17 @@ const Profile = () => {
         </div>
         <div className="flex flex-row items-center align-middle justify-apart w-full">
           <img className="ml-[16px]" src={NotificationIcom} alt="" />
-          <p className="ml-[18px]">Notication</p>
-          <div className="ml-[65px] ">
+          <p className="ml-[18px]">Notification</p>
+          <div className="ml-[65px] justify-end place-items-end ">
             <Switcher />
           </div>
         </div>
-        <div className="flex flex-row cursor-pointer h-[57px] rounded-[10px] w-[330px] mt-[33px] shadow-lg bg-white align-middle items-center mx-[30px]">
-          <img className="h-[18px] w-[18px] ml-[5px]" src={LogOut} alt="" />
-          <p className="ml-[10px]">Logout</p>
-        </div>
+        <Link to={"/login"}>
+          <div className="flex flex-row cursor-pointer h-[57px] rounded-[10px] w-[330px] mt-[33px] shadow-md hover:shadow-lg  bg-white align-middle items-center mx-[30px]">
+            <img className="h-[18px] w-[18px] ml-[5px]" src={LogOut} alt="" />
+            <p className="ml-[10px]">Logout</p>
+          </div>
+        </Link>
       </div>
       <Nav />
     </section>

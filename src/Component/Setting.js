@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Profileinfo, SettingsList } from "../data"
+import { Profileinfo, SettingsList, UtilitiesList } from "../data"
 import { Link } from "react-router-dom"
 
 //import components
@@ -41,15 +41,17 @@ const Setting = () => {
             const { id, name, email, profilepic } = info
             return (
               <div key={id} className="ml-[20px]">
-                <img
-                  className="h-[54px] w-[54px] top-[91px] rounded-full"
-                  src={profilepic}
-                  alt=""
-                />
-                <h4 className="ml-[2px] mt-[16.6px] text-[20px] font-bold">
-                  {name}
-                </h4>
-                <p className="font-[15px] text-[#9D9CA8]">{email}</p>
+                <Link to={"/profile"}>
+                  <img
+                    className="h-[54px] w-[54px] top-[91px] rounded-full"
+                    src={profilepic}
+                    alt=""
+                  />
+                  <h4 className="ml-[2px] mt-[16.6px] text-[20px] font-bold">
+                    {name}
+                  </h4>
+                  <p className="font-[15px] text-[#9D9CA8]">{email}</p>
+                </Link>
               </div>
             )
           })
@@ -58,9 +60,30 @@ const Setting = () => {
           <button>Edit</button>
           <button className="ml-5 top-[162px]">Change Password</button>
         </div>
+        {/* Utilities Map */}
+        <div className="flex flex-col">
+          <p className="font-semibold text-lg text-[20px] mt-[20px] ml-[18px]">
+            Utilities
+          </p>
+          {UtilitiesList.map((Uitems) => {
+            const { id, icon, text, url } = Uitems
+            return (
+              <Link to={url}>
+                <div
+                  key={id}
+                  className="flex items-center justify-start align-middle h-[22px] ml-[19px] my-[10px]"
+                >
+                  <img className="" src={icon} alt="" />
+                  <p className="ml-[20px]">{text}</p>
+                </div>
+              </Link>
+            )
+          })}
+        </div>
 
         {/* Remaining List items */}
         <div className="ml-4 mt-[25px]">
+          {/* Setting List */}
           {SettingsList.map((listItems) => {
             const {
               id,

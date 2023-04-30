@@ -123,19 +123,24 @@ export const Profileinfo = [
   },
 ]
 
-export const SettingsList = [
+export const UtilitiesList = [
   {
     id: 1,
-    heading: "Utilities",
-    icon1: MobileIcon,
-    icon2: MarketPlaceIcon,
-    text1: "Mobile Top Up",
-    text2: "Market Place",
-    switch1: false,
-    switch2: false,
+    icon: MobileIcon,
+    text: "Mobile Top Up",
+    url: "/mobileTopUp",
   },
   {
     id: 2,
+    icon: MarketPlaceIcon,
+    text: "Market Place",
+    url: "/marketPlace",
+  },
+]
+
+export const SettingsList = [
+  {
+    id: 1,
     heading: "Security",
     icon1: PadlockIcon,
     icon2: ThumbPrinticon,
@@ -148,7 +153,7 @@ export const SettingsList = [
     switch3: true,
   },
   {
-    id: 3,
+    id: 2,
     heading: "Others",
     icon1: WorldIcon,
     icon2: CurrencyIcon,
@@ -367,19 +372,31 @@ export const notificationData = [
     id: 1,
     heading: "Congratulations",
     text: "It has survived not only five centuries, but also the leap into electronic typesetting,",
-    time: "5h age",
+    time: "5h ago",
   },
   {
     id: 2,
     heading: "Congratulations",
     text: "lorem ipsum dalo nveiv v ejv e",
-    time: "5h age",
+    time: "5h ago",
   },
   {
     id: 3,
     heading: "Congratulations",
     text: "lorem ipsum dalo nveiv v ejv e",
-    time: "5h age",
+    time: "5h ago",
+  },
+  {
+    id: 4,
+    heading: "Congratulations",
+    text: "It has survived not only five centuries, but also the leap into electronic typesetting,",
+    time: "5h ago",
+  },
+  {
+    id: 5,
+    heading: "Congratulations",
+    text: "It has survived not only five centuries, but also the leap into electronic typesetting,",
+    time: "5h ago",
   },
 ]
 

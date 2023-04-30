@@ -1,17 +1,20 @@
-import React from "react";
-import Container from "../Component/Container";
-import BackButton from "../assets/BackButton.svg";
-import { FiSearch } from "react-icons/fi";
-import { MdOutlineContactPage } from "react-icons/md";
+import React from "react"
+import Container from "../Component/Container"
+import BackButton from "../assets/BackButton.svg"
+import { FiSearch } from "react-icons/fi"
+import { MdOutlineContactPage } from "react-icons/md"
+import { Link } from "react-router-dom"
 
 const MobileTopUp = () => {
   return (
     <Container>
       <div>
         <div className="mt-[30px] flex gap-[103px]">
-          <button>
-            <img src={BackButton} alt="" />
-          </button>
+          <Link to={"/home"}>
+            <button>
+              <img src={BackButton} alt="" />
+            </button>
+          </Link>
           <p className="text-[16px] font-bold leading-[35px]">Mobile top-up</p>
         </div>
       </div>
@@ -31,7 +34,7 @@ const MobileTopUp = () => {
       </div>
       <div>
         <p className="text-[#9192A1] mt-[22px] text-[15px] font-normal">
-          Select network serive provider
+          Select network service provider
         </p>
         <div className="flex mt-[11px] gap-[8px]">
           <div className="h-[73px] w-[74px] flex items-center justify-center rounded-[10px] bg-[#FFFF00]">
@@ -100,7 +103,7 @@ const MobileTopUp = () => {
         </button>
       </div>
     </Container>
-  );
-};
+  )
+}
 
-export default MobileTopUp;
+export default MobileTopUp

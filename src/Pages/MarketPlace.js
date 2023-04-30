@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 // import Data
 
@@ -13,7 +14,9 @@ function MarketPlace() {
     <section className="w-[360px] h-full bg-white mx-auto">
       <header>
         <div className="flex flex-row px-[10px] mb-[18px] mt-[23px]">
-          <img src={BackButton} alt="" />
+          <Link to={"/home"}>
+            <img src={BackButton} alt="" />
+          </Link>
           <p className="ml-[110px] text-[#303c5b] font-semibold">
             Market Place
           </p>
