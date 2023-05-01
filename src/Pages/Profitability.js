@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 // import icons
 import BackButton from "../assets/BackButton.svg"
@@ -16,9 +17,11 @@ const Profitability = () => {
   const [isDevice, setIsDevice] = useState(false)
 
   return (
-    <section className="flex flex-col mx-auto w-[360px] h-full bg-[#f8f7fe] ">
+    <section className="flex sm:w-full flex-col mx-auto w-full h-full bg-[#f8f7fe] ">
       <div className="flex flex-row px-[10px] mb-[18px] mt-[23px]">
-        <img src={BackButton} alt="" />
+        <Link to={"./home"}>
+          <img src={BackButton} alt="" />
+        </Link>
         <p className="ml-[112px] text-[#303c5b] font-semibold">Profitability</p>
       </div>
       {/* Currency dropdown */}

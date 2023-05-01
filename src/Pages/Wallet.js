@@ -1,19 +1,20 @@
 import React, { useState, useEffect } from "react"
 
+import { Link } from "react-router-dom"
+
 //import data
 import { HistoryData } from "../data"
 
 // import Components
 import SendRecieveDrawer from "../Component/SendRecieveDrawer"
 import History from "../Component/History"
+import ShareQRcode from "../Component/ShareQRcode"
 
 // import icons
 import BackButton from "../assets/BackButton.svg"
 import MoneyBag from "../assets/moneybag.png"
 import BNBLogo from "../assets/BNBLogo.png"
 import BitcoinLogo from "../assets/BitcoinLogo.png"
-
-import { Link } from "react-router-dom"
 
 // Slider Data
 const sliderz = [
@@ -68,7 +69,7 @@ const Wallet = () => {
   }, [index])
 
   return (
-    <section className="h-screen w-[360px] flex flex-col mx-auto bg-[#F9F8FF] overflow-auto ">
+    <section className="h-screen sm:w-full md:w-[360px] lg:w-[360px] flex flex-col mx-auto bg-[#F9F8FF] overflow-auto ">
       {/* BackButton */}
       <Link to={"/home"}>
         <button>
@@ -107,7 +108,7 @@ const Wallet = () => {
       </div>
 
       {/* Balance Slider */}
-      <div className="flex flex-row mt-[18px] items-center top-[90px] relative">
+      <div className="flex flex-row mt-[18px] items-center top-[90px] w-full justify-center mx-auto relative">
         <button className="h-[153px] flex absolute left-0 w-[16px] rounded-r-[15px] bg-[#FFA24c]"></button>
 
         {sliderz.map((person, personIndex) => {
@@ -155,6 +156,7 @@ const Wallet = () => {
         </div>
       </div>
       <SendRecieveDrawer />
+      <ShareQRcode />
     </section>
   )
 }

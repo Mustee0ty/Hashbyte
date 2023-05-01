@@ -19,7 +19,7 @@ import Nav from "../Component/Nav"
 
 const Profile = () => {
   return (
-    <section className="w-[360px] h-screen bg-white mx-auto">
+    <section className="w-[360px] sm:w-full h-screen bg-white mx-auto">
       {Profileinfo.map((person) => {
         const {
           id,

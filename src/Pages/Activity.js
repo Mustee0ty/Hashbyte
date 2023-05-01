@@ -14,10 +14,12 @@ import { ActivitiesNav } from "../data"
 
 const Activity = () => {
   return (
-    <section className="mx-auto w-[360px] bg-gray-100 flex flex-col">
+    <section className="mx-auto w-full sm:w-full bg-gray-100 flex flex-col">
       {/* header */}
       <div className="flex flex-row mt-[23px] mb-[20px] ">
-        <img className="ml-[19px]" src={BackButton} alt="" />
+        <Link to={"/home"}>
+          <img className="ml-[19px]" src={BackButton} alt="" />
+        </Link>
         <p className="text-black ml-[118px] ">Activities</p>
       </div>
       {/* The Nav */}

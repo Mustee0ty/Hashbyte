@@ -36,7 +36,7 @@ import Settings from "./Component/Setting.js"
 const App = () => {
   return (
     <Router>
-      <div>
+      <div className="flex flex-wrap max-w-screen-lg overflow-x-hidden mx-auto">
         <Switch>
           <Route exact path="/" component={OnboardingScreen} />
           <Route exact path="/login" component={Login} />

@@ -15,7 +15,7 @@ const Upgrade = () => {
   const [isQualistOpen, setIsQualistOpen] = useState(false)
 
   return (
-    <section className="mx-auto w-[360px] h-[800px]">
+    <section className="mx-auto sm:w-full w-[360px] h-[800px]">
       {/* the div with the background */}
       <div className="bg-[#492FA4] text-white flex flex-col w-full pb-[23px] relative">
         <img

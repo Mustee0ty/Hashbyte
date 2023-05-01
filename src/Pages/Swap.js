@@ -20,7 +20,7 @@ import SwapHistory from "../Component/SwapHistory"
 
 const Swap = () => {
   return (
-    <section className="w-[360px] h-screen bg-[#ffffff] mx-auto">
+    <section className="w-[360px] sm:w-full h-screen bg-[#ffffff] mx-auto">
       {/* Backbutton and Heading */}
       <div className="flex flex-row mt-[23px] ">
         <Link to={"/home"}>
@@ -53,7 +53,7 @@ const Swap = () => {
             &nbsp; 0.678btc
           </p>
         </div>
-        <img className="mx-auto mt-[-7px]" src={SwapIcon} alt="" />
+        <img className="mx-auto" src={SwapIcon} alt="" />
         <div className="w-[297px] h-[50px] rounded-[28px] border-[1px] relative mx-auto mt-[-20px] my-[16px]">
           <div className="flex flex-row align-middle items-center justify-start ">
             <img className="m-[10px]" src={TetherIcon} alt="" />
@@ -71,7 +71,7 @@ const Swap = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-row w-[330px] mx-auto gap-x-[12px]">
+      <div className="flex flex-row w-[330px] mx-auto mt-[25px] gap-x-[12px]">
         {swapTime.map((singlebubble) => {
           const { id, time } = singlebubble
           return (

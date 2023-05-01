@@ -17,7 +17,7 @@ const WalletAd = () => {
   const [index, setIndex] = useState(0)
 
   return (
-    <section className="flex flex-col bg-white mx-auto h-[800px] items-center w-[360px]">
+    <section className="flex flex-col sm:w-full bg-white mx-auto h-[800px] items-center w-[360px]">
       <div className="flex flex-row w-full items-center justify-center align-middle mt-[50px]">
         <img className=" " src={BackButton} alt="" />
         <p className="text-[16px] mx-auto font-semibold ">Wallet</p>

@@ -60,7 +60,7 @@ const Home = () => {
   // }
 
   return (
-    <section className="flex items-center justify-center mx-auto h-max max-w-screen-sm">
+    <section className="flex items-center justify-center mx-auto h-max sm:w-full max-w-screen-sm w-full">
       {HomeData.map((items) => {
         const {
           id,
@@ -77,7 +77,7 @@ const Home = () => {
           estYearlyIncome,
         } = items
         return (
-          <section className="w-max mx-auto h-full relative">
+          <section className="w-screen mx-auto h-full relative">
             {/* Settings */}
             <div
               className={`${
@@ -86,7 +86,7 @@ const Home = () => {
             >
               <Setting props={handleImageClick} />
             </div>
-            <header className="h-[471px] w-[360px] bg-transparent bg-gradient-to-r from-purple-800 via-purple-900 to-blue-900 flex flex-col text-white relative ">
+            <header className="h-[471px] w-screen bg-transparent bg-gradient-to-r from-purple-800 via-purple-900 to-blue-900 flex flex-col text-white relative ">
               <img className="absolute top-0" src={BgImg} alt="" />
               <button
                 onClick={handleImageClick}

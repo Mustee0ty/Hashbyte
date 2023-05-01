@@ -9,7 +9,7 @@ import { Link } from "react-router-dom"
 
 const OnboardingScreen = () => {
   return (
-    <section className="mx-auto flex justify-center overflow-hidden  h-screen w-[360px] bg-gradient-to-b from-purple-700 via-purple-900 to-blue-900 text-white relative">
+    <section className="mx-auto sm:w-full flex justify-center overflow-hidden  h-screen w-full bg-gradient-to-b from-purple-700 via-purple-900 to-blue-900 text-white relative">
       <Link to={"/login"}>
         <button className="absolute right-0 text-[15px] mr-[25px] mt-[31px] ">
           Skip
@@ -54,7 +54,7 @@ const OnboardingScreen = () => {
         alt=""
       />
       <Link to={"/login"}>
-        <button className="w-[277px] h-[61px] absolute rounded-[30.5px] flex items-center align-middle justify-center border-[0.5px] border-white bg-transparent text-white box-border left-[41px] top-[601px] z-50">
+        <button className="w-[277px] h-[61px] absolute rounded-[30.5px] flex items-center align-middle justify-center border-[0.5px] border-white bg-transparent text-white box-border left-[58px] top-[601px] z-50">
           Get Started
         </button>
       </Link>
